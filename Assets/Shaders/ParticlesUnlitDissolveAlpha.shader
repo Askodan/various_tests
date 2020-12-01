@@ -6,17 +6,16 @@
         _MaskTex ("DissolveTexture", 2D) = "white" {}
         _Fade("Fade", Range(0,1)) = 0.2
         _Speed("Speed", Range(-10,10)) = 1
-
+        [Enum(UnityEngine.Rendering.BlendMode)] _SrcBlend ("BlendSource", Float) = 1
+        [Enum(UnityEngine.Rendering.BlendMode)] _DstBlend ("BlendDestination", Float) = 0
     }
     SubShader
     {
         Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Opaque"}
         LOD 100
-	//Blend SrcAlpha One
-        Blend SrcAlpha OneMinusSrcAlpha
-        //Blend One OneMinusSrcAlpha
-
-	ZWrite Off
+        //Blend SrcAlpha OneMinusSrcAlpha
+        Blend [_SrcBlend] [_DstBlend]
+	    ZWrite Off
 
         Pass
         {

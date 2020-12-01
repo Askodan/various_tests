@@ -267,7 +267,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 0.7019608}
+      maxColor: {r: 1, g: 0.677406, b: 0, a: 0.50980395}
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.8773585, g: 0.79747784, b: 0.32694018, a: 1}
@@ -1028,12 +1028,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0
           value: 0.0043640137
-          inSlope: 0.56451625
-          outSlope: 0.56451625
+          inSlope: 1.2551308
+          outSlope: 1.2551308
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.20112781
+          outWeight: 0.1148148
         - serializedVersion: 3
           time: 1
           value: 0.9519689

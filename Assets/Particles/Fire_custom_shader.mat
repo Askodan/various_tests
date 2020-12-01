@@ -68,7 +68,7 @@ Material:
     - _Cutoff: 0.5
     - _DIntesity: 1
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 1
     - _Fade: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
@@ -87,7 +87,7 @@ Material:
     - _SpeedUd: 1
     - _SpeedV: 1
     - _SpeedVd: 1
-    - _SrcBlend: 1
+    - _SrcBlend: 5
     - _TimeOffset: 0
     - _UVSec: 0
     - _ZWrite: 1
