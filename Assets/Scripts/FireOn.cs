@@ -5,6 +5,8 @@ using UnityEngine;
 public class FireOn : MonoBehaviour
 {
     private ParticleSystem p_system;
+    private bool fireOn = true;
+
     void Awake()
     {
         p_system = GetComponentInChildren<ParticleSystem>();
@@ -12,13 +14,14 @@ public class FireOn : MonoBehaviour
 
     public void ChangeFireState()
     {
-        if (p_system.isPlaying)
+        fireOn = !fireOn;
+        if (fireOn)
         {
-            p_system?.Stop(true);
+            p_system?.Play(true);
         }
         else
         {
-            p_system?.Play(true);
+            p_system?.Stop(true);
         }
     }
 }
